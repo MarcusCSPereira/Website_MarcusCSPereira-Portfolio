@@ -130,6 +130,7 @@ strong{
 
 .first-section p{
   font-size: .8rem;
+  letter-spacing: 0.6px;
   color: var(--white);
 }
 
@@ -249,6 +250,7 @@ footer .title{
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
+  cursor: default;
 }
 
 #my-projects-list{
