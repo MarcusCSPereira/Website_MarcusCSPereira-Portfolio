@@ -7,7 +7,7 @@ Uma landing page deselvolvida utilizando HTML, CSS e JavaScript, para funcionar 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ## 🔍 Preview
-<img width="600" src="assets/preview.gif">   
+<img width="600" src="images/preview.gif">   
 
 ## ✍🏼 Author
 [@MarcusCSPereira](https://github.com/MarcusCSPereira)
