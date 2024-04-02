@@ -1,1 +1,43 @@
-function getProjects(){var t=document.getElementById("loading");fetch("https://api.github.com/users/MarcusCSPereira/repos",{method:"GET"}).then(e=>e.json()).then(e=>{t.style.display="none",showProjects(e)}).catch(e=>{console.log(e)})}function showProjects(n){var o,c=document.getElementById("my-projects-list");for(let t=0;t<n.length;t++){let e=document.createElement("a");e.href=n[t].clone_url,e.target="_blank",e.title=n[t].description,"MarcusCSPereira"!=n[t].name&&""!=n[t].name&&(o=document.createTextNode(n[t].name),e.appendChild(o),c.appendChild(e))}}getProjects();
+function getProjects(){
+    const urlGitHub = 'https://api.github.com/users/MarcusCSPereira/repos'
+    var loadingElement1 = document.getElementById('loading1')
+    var loadingElement2 = document.getElementById('loading2')
+
+    fetch(urlGitHub,{
+        method: 'GET',
+    })
+        .then((response) => response.json())
+        .then((response) => {
+            showProjects(response)
+            loadingElement1.style.display = 'none'
+            loadingElement2.style.display = 'none'
+        })
+        .catch((e) => {
+            console.log(`Error -> ${e}`)
+        })
+}
+
+function showProjects(data){
+    var listElement1 = document.getElementById('my-studies-list')
+    var listElement2 = document.getElementById('my-projects-list')
+    for(let i = 0; i < data.length; i++)
+    {
+        let div = document.createElement("div")
+        let a = document.createElement("a")
+        a.href = data[i]['clone_url']
+        a.target = '_blank'
+        a.title = data[i]['description']
+        let linkText = document.createTextNode(data[i]['name']);
+        if(data[i]['name'] != 'MarcusCSPereira' && data[i]['name'].includes('Website') == false && data[i]['name'].includes('Project') == false){
+          a.appendChild(linkText);
+          div.appendChild(a)
+          listElement1.appendChild(div)
+        }else if(data[i]['name'] != 'MarcusCSPereira'){
+            a.appendChild(linkText);
+            div.appendChild(a)
+            listElement2.appendChild(div)
+        }
+    }
+}
+
+getProjects()
