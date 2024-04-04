@@ -147,7 +147,7 @@ h1
 
 .animation-text
 {
-  font-size: 15px;
+  font-size: 19px;
   color:var(--white);
   letter-spacing:2px
 }
@@ -173,12 +173,12 @@ h1
 {
 
 .animation-text{
-  font-size: 20px;
+  font-size: 25px;
 	color:var(--white);
 	letter-spacing:2px
 }
 :root .ti-cursor{
-  font-size: var(--ti-cursor-font-size,25px);
+  font-size: var(--ti-cursor-font-size,28px);
   color: var(--ti-cursor-color, var(--light3));
 }
   
@@ -187,12 +187,12 @@ h1
 @media screen and (min-width:700px)
 {
  .animation-text{
-  font-size: 28px;
+  font-size: 35px;
 	color:var(--white);
 	letter-spacing:4px
 }
 :root .ti-cursor{
-  font-size: var(--ti-cursor-font-size,35px);
+  font-size: var(--ti-cursor-font-size,38px);
   color: var(--ti-cursor-color, var(--light3));
 }
 }
@@ -200,12 +200,12 @@ h1
 @media screen and (min-width:900px)
 {
  .animation-text{
-  font-size: 35px;
+  font-size: 40px;
   color:var(--white);
   letter-spacing:6px
 }
 :root .ti-cursor{
-  font-size: var(--ti-cursor-font-size,40px);
+  font-size: var(--ti-cursor-font-size,43px);
   color: var(--ti-cursor-color, var(--light3));
 }
   
@@ -214,7 +214,7 @@ h1
 @media screen and (min-width:1300px)
 {
  .animation-text{
-  font-size: 3.5rem;
+  font-size: 2.7rem;
   color:var(--white);
   letter-spacing:8px
 }
