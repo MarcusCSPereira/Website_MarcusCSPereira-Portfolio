@@ -147,13 +147,13 @@ h1
 
 .animation-text
 {
-  font-size: 19px;
+  font-size: 17px;
   color:var(--white);
   letter-spacing:2px
 }
 
 :root .ti-cursor{
-  font-size: var(--ti-cursor-font-size,20px);
+  font-size: var(--ti-cursor-font-size,19px);
   color: var(--ti-cursor-color, var(--light3));
 }
 
@@ -173,12 +173,12 @@ h1
 {
 
 .animation-text{
-  font-size: 25px;
+  font-size: 24px;
 	color:var(--white);
 	letter-spacing:2px
 }
 :root .ti-cursor{
-  font-size: var(--ti-cursor-font-size,28px);
+  font-size: var(--ti-cursor-font-size,27px);
   color: var(--ti-cursor-color, var(--light3));
 }
   
@@ -187,12 +187,12 @@ h1
 @media screen and (min-width:700px)
 {
  .animation-text{
-  font-size: 35px;
+  font-size: 34px;
 	color:var(--white);
 	letter-spacing:4px
 }
 :root .ti-cursor{
-  font-size: var(--ti-cursor-font-size,38px);
+  font-size: var(--ti-cursor-font-size,37px);
   color: var(--ti-cursor-color, var(--light3));
 }
 }
