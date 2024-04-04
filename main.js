@@ -39,5 +39,11 @@ function showProjects(data){
         }
     }
 }
-
 getProjects()
+
+document.addEventListener('DOMContentLoaded', () => {
+  new TypeIt('.animated', {
+    speed: 150,
+    loop: true
+    }).type('Olá, me chamo <strong>Marcus César</strong>!', {delay: 400}).delete(28).type('Sou um <strong>Full-Stack</strong> Developer!', {delay: 400}).delete(28).type('<strong>Bem-vindo</strong> ao meu <strong>portfólio</strong>!', {delay: 400}).delete(27).go();
+});

@@ -143,6 +143,89 @@ h1
 	letter-spacing:8px
 }
 
+/* Animation Text */
+
+.animation-text
+{
+  font-size: 15px;
+  color:var(--white);
+  letter-spacing:2px
+}
+
+:root .ti-cursor{
+  font-size: var(--ti-cursor-font-size,20px);
+  color: var(--ti-cursor-color, var(--light3));
+}
+
+@keyframes blink
+{
+  0%,100%
+  {
+    opacity:1
+  }
+  50%
+  {
+    opacity:0
+  }
+}
+
+@media screen and (min-width:500px)
+{
+
+.animation-text{
+  font-size: 20px;
+	color:var(--white);
+	letter-spacing:2px
+}
+:root .ti-cursor{
+  font-size: var(--ti-cursor-font-size,25px);
+  color: var(--ti-cursor-color, var(--light3));
+}
+  
+}
+
+@media screen and (min-width:700px)
+{
+ .animation-text{
+  font-size: 28px;
+	color:var(--white);
+	letter-spacing:4px
+}
+:root .ti-cursor{
+  font-size: var(--ti-cursor-font-size,35px);
+  color: var(--ti-cursor-color, var(--light3));
+}
+}
+
+@media screen and (min-width:900px)
+{
+ .animation-text{
+  font-size: 35px;
+  color:var(--white);
+  letter-spacing:6px
+}
+:root .ti-cursor{
+  font-size: var(--ti-cursor-font-size,40px);
+  color: var(--ti-cursor-color, var(--light3));
+}
+  
+}
+
+@media screen and (min-width:1300px)
+{
+ .animation-text{
+  font-size: 3.5rem;
+  color:var(--white);
+  letter-spacing:8px
+}
+:root .ti-cursor{
+  font-size: var(--ti-cursor-font-size,65px);
+  color: var(--ti-cursor-color, var(--light3));
+}
+  
+}
+/*End Animation Text */
+
 strong
 {
 	color:var(--light3)
