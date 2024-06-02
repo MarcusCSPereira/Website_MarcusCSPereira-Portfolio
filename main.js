@@ -47,3 +47,22 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: true
     }).type('Olá, me chamo <strong>Marcus César</strong>!', {delay: 400}).delete(28).type('Sou um <strong>Mobile</strong> Developer!', {delay: 400}).delete(28).type('<strong>Bem-vindo</strong> ao meu <strong>portfólio</strong>!', {delay: 400}).delete(27).go();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const navLinks = document.querySelectorAll("nav a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+});

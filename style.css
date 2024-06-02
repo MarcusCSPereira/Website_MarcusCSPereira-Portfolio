@@ -6,6 +6,10 @@
 	padding:0
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root
 {
 	--white:#fff;
@@ -423,3 +427,29 @@ footer .title
 	color:var(--light3);
 	transition:.4s
 }
+
+.social-media a:hover{
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.bi-instagram:hover {
+  fill: #E4405F; /* Cor do Instagram */
+}
+
+.bi-linkedin:hover {
+  fill: #0A66C2; /* Cor do LinkedIn */
+}
+
+.bi-whatsapp:hover {
+  fill: #25D366; /* Cor do WhatsApp */
+}
+
