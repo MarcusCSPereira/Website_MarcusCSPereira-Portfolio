@@ -28,7 +28,7 @@ function showProjects(data){
         a.target = '_blank'
         a.title = data[i]['description']
         let linkText = document.createTextNode(data[i]['name']);
-        if(data[i]['name'] != 'MarcusCSPereira' && data[i]['name'].includes('Website') == false && data[i]['name'].includes('Project') == false){
+        if(data[i]['name'] != 'MarcusCSPereira' && data[i]['name'].includes('Website') == false && data[i]['name'].includes('Project') == false && data[i]['name'].includes('MealMatch') == false && data[i]['name'].includes('Residencia') == false && data[i]['name'].includes('API') == false){
           a.appendChild(linkText);
           div.appendChild(a)
           listElement1.appendChild(div)
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new TypeIt('.animated', {
     speed: 150,
     loop: true
-    }).type('Olá, me chamo <strong>Marcus César</strong>!', {delay: 400}).delete(28).type('Sou um <strong>Mobile</strong> Developer!', {delay: 400}).delete(28).type('<strong>Bem-vindo</strong> ao meu <strong>portfólio</strong>!', {delay: 400}).delete(27).go();
+    }).type('Olá, me chamo <strong>Marcus César</strong>!', {delay: 400}).delete(28).type('Sou um <strong>Back-End</strong> Developer!', {delay: 400}).delete(28).type('<strong>Bem-vindo</strong> ao meu <strong>portfólio</strong>!', {delay: 400}).delete(27).go();
 });
 
 document.addEventListener("DOMContentLoaded", function() {
