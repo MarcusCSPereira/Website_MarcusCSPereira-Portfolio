@@ -28,7 +28,7 @@ function showProjects(data){
         a.target = '_blank'
         a.title = data[i]['description']
         let linkText = document.createTextNode(data[i]['name']);
-        if(data[i]['name'] != 'MarcusCSPereira' && data[i]['name'].includes('Website') == false && data[i]['name'].includes('Project') == false && data[i]['name'].includes('MealMatch') == false && data[i]['name'].includes('Residencia') == false && data[i]['name'].includes('API') == false){
+        if(data[i]['name'] != 'MarcusCSPereira' && !data[i]['name'].includes('Website') && !data[i]['name'].includes('Project') && !data[i]['name'].includes('MealMatch') && !data[i]['name'].includes('Residencia') && !data[i]['name'].includes('API') && !data[i]['name'].includes('Bastiao')){
           a.appendChild(linkText);
           div.appendChild(a)
           listElement1.appendChild(div)
